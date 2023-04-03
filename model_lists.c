@@ -13,7 +13,7 @@ int main() {
     for (i = 0; i < sizeof(mat)/ sizeof(int); i++) {
 
         if (!push(&list, mat[i])){
-            printf("Error %d\n", list.head_list);
+            printf("Error located: %d\n", list.head_list);
             break;
         }
     }
