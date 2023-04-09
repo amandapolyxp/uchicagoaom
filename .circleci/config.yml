@@ -31,10 +31,10 @@ jobs:
       - checkout
       - python/install-packages:
           pkg-manager: pip
-      -python/install-packages:
+      - python/install-packages:
           pip-dependency-file: dev-requirenments.txt
           pkg-manager: pip
-      -python/install-packges: 
+      - python/install-packges: 
         args: pytest
         pkg-manager: pip
         pypi-cache: false
