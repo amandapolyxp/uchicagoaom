@@ -32,12 +32,12 @@ jobs:
       - python/install-packages:
           pkg-manager: pip
       - python/install-packages:
-          pip-dependency-file: dev-requirenments.txt
+          pip-dependency-file: dev-requirements.txt
           pkg-manager: pip
       - python/install-packges: 
-        args: pytest
-        pkg-manager: pip
-        pypi-cache: false
+          args: pytest
+          pkg-manager: pip
+          pypi-cache: false
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
